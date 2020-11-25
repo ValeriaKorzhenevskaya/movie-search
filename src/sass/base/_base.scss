@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    position:relative; 
+    min-height:100%;
+}
+
+body {
+    @extend %font-add;
+    @include font($size: 1.6rem, $height: 2.6rem, $weight: normal);
+    background-color: $color-background;
+    // @include linear-gradient($direction: to top right, $fromColor: #701422, $toColor: #481718);
+}
+
+h1 {
+    @extend %font-head;
+    @include font($height: 5.4rem, $size: 4.4rem);
+    @include media-mobile {
+        @include font($height: 4.2rem, $size: 3.2rem);
+    }
+    
+}
+
+h2 {
+    @include font($size: 3.4rem, $height: 4.6rem);
+    @include media-mobile {
+        @include font($height: 3.3rem, $size: 2.4rem);
+    }
+}
+
+h3 {
+    @extend %font-add;
+    @include font($size: 2rem, $height: 3rem);
+    @include media-mobile {
+        @include font($height: 1.5rem, $size: 1.6rem);
+    }
+}
+
+h4 {
+    @extend %font-add;
+    @include font($size: 2.2rem, $height: 3.0rem, $weight: 600);
+    @include media-tablet {
+        @include font($height: 3.0rem, $size: 2.0rem);
+    }
+}
+
+h5 {
+    @extend %font-add;
+    @include font($size: 1.6rem, $height: 2.6rem);
+}
+
+.hidden {
+    visibility: hidden
+}
+
+.hide {
+    display: none;
+}
