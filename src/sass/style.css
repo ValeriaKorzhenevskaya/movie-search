@@ -1,0 +1,332 @@
+@import "../../node_modules/swiper/css/swiper.min.css";
+.header_logo, h1:hover {
+  transition: all 0.5s ease-in-out;
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+}
+
+h5, h4, h3, body {
+  font-family: "Muli", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.6rem;
+  background-color: #481718;
+}
+
+h1 {
+  font-size: 4.4rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 5.4rem;
+}
+@media (max-width: 414px) {
+  h1 {
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 4.2rem;
+  }
+}
+h1:hover {
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 6rem;
+}
+
+h2 {
+  font-size: 3.4rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 4.6rem;
+}
+@media (max-width: 414px) {
+  h2 {
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 3.3rem;
+  }
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 3.4rem;
+}
+@media (max-width: 414px) {
+  h3 {
+    font-size: 2.1rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 3.1rem;
+  }
+}
+
+h4 {
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3rem;
+}
+@media (max-width: 768px) {
+  h4 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 3rem;
+  }
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 2.6rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.icon {
+  background-image: url("../../src/icons/github.svg");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+.star {
+  background-image: url("../../src/icons/star.svg");
+  width: 20px;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.reset {
+  background-image: url("../../src/icons/close.svg");
+  width: 27px;
+  height: 27px;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  border: none;
+  background-color: white;
+  outline: none;
+}
+
+.submit {
+  background-image: url("../../src/icons/search1.svg");
+  width: 27px;
+  height: 27px;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  border: none;
+  background-color: white;
+  outline: none;
+}
+
+.search {
+  justify-content: center;
+  width: 70%;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(255, 253, 253, 0.582);
+  margin: 40px 0 10px 0;
+  border-radius: 20px;
+}
+
+.search__string {
+  margin-left: 20px;
+  width: 90%;
+  font-size: 1.3em;
+  border: 2px solid #ffffff;
+  outline: none;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 390px;
+  margin: 20px auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #481718;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.append-buttons a {
+  display: inline-block;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 10px 0 0 0;
+  font-size: 13px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie__title {
+  color: white;
+}
+
+.movie__poster {
+  width: 200px;
+  height: 250px;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.76);
+}
+
+.movie__year {
+  color: #f86e6e;
+}
+
+.movie__rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.header {
+  background-color: #481718;
+  /* Fallback Color */
+  background-image: -webkit-gradient(linear, to top, from(#b51b33), to(#481718));
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(to top, #b51b33, #481718);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(to top, #b51b33, #481718);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(to top, #b51b33, #481718);
+  /* IE10 */
+  background-image: -o-linear-gradient(to top, #b51b33, #481718);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(to top, #b51b33, #481718);
+  height: 100px;
+  display: flex;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.356);
+}
+
+.header_logo {
+  color: #ffffff;
+}
+
+.wrapper {
+  max-width: 1197px;
+  margin: auto;
+}
+@media (max-width: 1197px) {
+  .wrapper {
+    padding: 0 46px;
+  }
+}
+@media (max-width: 414px) {
+  .wrapper {
+    padding: 0 21px;
+  }
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  background-color: #481718;
+  /* Fallback Color */
+  background-image: -webkit-gradient(linear, to bottom, from(#8f1c2a), to(#481718));
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(to bottom, #8f1c2a, #481718);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(to bottom, #8f1c2a, #481718);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(to bottom, #8f1c2a, #481718);
+  /* IE10 */
+  background-image: -o-linear-gradient(to bottom, #8f1c2a, #481718);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(to bottom, #8f1c2a, #481718);
+  height: 50px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.356);
+  bottom: 0;
+  align-items: center;
+}
+
+.footer__text {
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  background-color: fuchsia;
+}
+
+main {
+  padding-bottom: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
